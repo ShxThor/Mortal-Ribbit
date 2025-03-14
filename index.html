@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="author" content="Bürkert Azubis 2024">
+        <meta name="description" content="Action sidescroller 1v1 fight game">
+        <title>Mortal Ribbit</title>
+        <link rel="icon" href="images/logo.png"> 
+        <link rel="stylesheet" href="Css/styleindex.css">
+        <script src="Js/index.js" defer></script>
+    </head>
+    <body>
+    <main>
+        <p class="title"></p>
+        <button class ="game-modes" onclick="show('map-selection-Contents'); return false">1 VS 1</button>
+        <label class ="game-modes">Comming soon</label>
+
+        <div style="display: none" id="map-selection-Contents">
+
+            <img class ="text-images" src="images/Choose-Battleground.png" alt="Choose-Battleground">
+
+            <div class="map-selection">
+                <button class ='map-option' onclick="selectBackground('../images/maps/Bild (1).png');">
+                    <a>    
+                    <img src="images/maps/Bild (1).png" alt="Jesus Map">
+                    </a>
+                </button>
+
+                <button class ='map-option' onclick="selectBackground('../images/maps/Bild (2).png'); return false;">
+                    <a href="html/game.html">
+                        <img src="images/maps/Bild (2).png" alt="Stadt Map">
+                    </a>
+                </button>
+
+                <button class ='map-option' onclick="selectBackground('../images/maps/Bild (3).png'); return false;">
+                    <a href="html/game.html">
+                        <img src="images/maps/Bild (3).png" alt="Berg Map">
+                    </a>
+                </button>
+
+                <button class ='map-option' onclick="selectBackground('../images/maps/Bild (4).png'); return false;">
+                    <a href="html/game.html">
+                        <img src="images/maps/Bild (4).png" alt="Frog Map">
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div style="display: none" id ='player-name-choice'>
+            <img class="text-images" src="images/Choose-your-name.png" alt="Name-Chooise">
+            <div class = "div-name-input">
+                <label for="player1">Player 1:</label>
+                <input type="text" id="player1" name="player1" required>
+        
+                <label for="player2">Player 2:</label>
+                <input type="text" id="player2" name="player2" required>
+        
+                <button id ='submit' onclick="selectPlayername()">start game</button>
+            </d>
+        </div>
+    </main>
+    </body>
+</html>

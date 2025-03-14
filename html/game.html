@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script defer src="../Js/function.js"></script>
+        <script defer src ="../Js/index.js"></script>
+        <link rel="stylesheet" href="../Css/stylegame.css">
+        <link rel="icon" href="../images/logo.png"> 
+        <title>Mortal-Ribbit</title>
+    </head>
+
+    <body>
+        <div class="game-healthbar-container">
+            <label class ="Player1">
+                <progress id="health1" value="100" max="100"></progress>
+                <h3 id = "Player1-name">Pfalumen Julian</h3>
+            </label>   
+            
+            <div class = "div-healthbar">
+                <img id = 'healthbar-image' src="../images/Healthbar.png">
+            </div>
+            
+            <label class ="Player2">
+                <progress id="health2" value="100" max="100"></progress>
+                <h3 id = "Player2-name">Kröten Kurt</h3>
+            </label>
+        </div>
+        <br></br>
+        <div style="display: block" id="StartGame">
+            <button id="btn"></button>
+            <audio id="audio" src="../audio/Mortal-Ribbit.mp3"></audio>
+        </div>  
+        <div style="display: block" id="CanvasContent">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        
+        <div style="display: none" id="GameOverContent">
+            <img class = "gameOverImage"  src = "../images/Game-Over.png">
+            <img class = "spaceImage" src = "../images/Space.png">
+        </div>
+
+        <div style="display: none" id="PauseContent">
+            <img class = "pauseImage" src = "../images/Pause.png">
+            <img class = "spaceImage" src = "../images/Space.png">
+        </div>  
+    </body>
+</html>
