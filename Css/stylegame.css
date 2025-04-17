@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 1920px,1080px;
+    background-size: 115% auto;
     overflow: hidden;
 }
 
@@ -59,14 +59,20 @@ progress::-webkit-progress-value {
 }
 .Player1{
     margin-left: 750px;
-    margin-right: -750px;
+    margin-right: -720px;
     margin-top: 55px; 
     margin-top: 100px;  
 }
+#Player1-name{
+    background-color: #4495c4;
+}
 .Player2{
-    margin-left: -750px;
+    margin-left: -720px;
     margin-right: 750px;
     margin-top: 100px; 
+}
+#Player2-name{
+    background-color: #d4a642;
 }
 #healthbar-image{
     width: 1750px;
@@ -79,7 +85,7 @@ progress::-webkit-progress-value {
     
  }
  canvas {
-    height: 65vh;
+    height: 60vh;
     margin-bottom: 0;
     width: 100%;
 

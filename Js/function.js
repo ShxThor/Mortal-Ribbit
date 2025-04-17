@@ -61,7 +61,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = screen.width
-canvas.height = screen.height - 500
+canvas.height = screen.height - 350
 const gravity = 0.7 //value for gravity
 let soundTrack = document.getElementById('audio') // Soundtrack of game
 let announcer = new Audio('../audio/fight.mp3')
@@ -85,7 +85,7 @@ class Player {
         this.image = new Image() // Displayed image
         this.currentFrame = 0 // Current Frame of animation
         this.frameCount = 0 // Count of every frame ever displayed (Infinite hight number)
-        this.fpc = 6 // Frames per count 
+        this.fpc = 3 // Frames per count 
         this.orientation = orientation // Direction player is facing part of the image path
         this.foldersrc = foldersrc // Folder in which the images are being stored
         this.imageOffset = imageOffset 
@@ -1125,6 +1125,5 @@ function StartGame(){
 
 window.addEventListener('keydown', handleKeyDown);
 window.addEventListener('keyup', handleKeyUp);
-
 
 animate();
